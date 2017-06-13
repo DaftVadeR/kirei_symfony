@@ -1,0 +1,15 @@
+image_gallery:
+    resource: "@ImageGalleryBundle/Resources/config/routing.yml"
+    prefix:   /
+
+user_profile:
+    resource: "@UserProfileBundle/Resources/config/routing.yml"
+    prefix:   /profiles/
+
+image_upload:
+    resource: "@ImageUploadBundle/Resources/config/routing.yml"
+    prefix:   /image-upload/
+
+site:
+    path:     /site
+    defaults: { _controller: AppBundle:Site:index }

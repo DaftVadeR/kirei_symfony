@@ -1,0 +1,42 @@
+DafT\ImageGalleryBundle\Entity\Image:
+    type: entity
+    table: null
+    repositoryClass: DafT\ImageGalleryBundle\Repository\ImageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        width:
+            type: integer
+            nullable: true
+        height:
+            type: integer
+            nullable: true
+        fileSize:
+            type: integer
+            nullable: true
+            column: file_size
+        fileExt:
+            type: string
+            length: 255
+            nullable: true
+            column: file_ext
+        rating:
+            type: string
+            length: 255
+            nullable: true
+        createdAt:
+            type: datetime
+            nullable: true
+            column: created_at
+        updatedAt:
+            type: datetime
+            nullable: true
+            column: updated_at
+    lifecycleCallbacks: {  }

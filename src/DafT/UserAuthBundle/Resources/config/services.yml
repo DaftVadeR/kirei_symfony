@@ -1,0 +1,4 @@
+services:
+#    user_auth.example:
+#        class: Daft\UserAuthBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+    <div class="container">
+    {% for image in images %}
+        <div class="image-grid">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    {{ image.title }}
+                    {{ image.getWebDirectory }}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

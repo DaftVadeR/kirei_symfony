@@ -1,0 +1,3 @@
+images:
+    path:     /
+    defaults: { _controller: ImageGalleryBundle:Images:index }
