@@ -265,7 +265,7 @@ class Image
     {
         $time = $this->getCreatedAt() ? $this->getCreatedAt()->getTimestamp() : null;
 
-        if($time != null && $time != 0){
+        if($time != null && $time != 0) {
             $subfolder = date('Ym', $time);
         } else {
             $subfolder = 'unknown';
@@ -279,11 +279,6 @@ class Image
     public function getWebDirectory()
     {
         return realpath(__DIR__ . "/../../../../web/");
-    }
-
-    public function getFilePath()
-    {
-        return $this->getParameter('assetic.write_to').DIRECTORY_SEPARATOR.IMAGES_FOLDER.$this->getId().'.'.$this->getFileExt();
     }
 
     public function getFileUrl()

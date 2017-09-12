@@ -29,12 +29,10 @@ class ImageEntityTest extends WebTestCase
         $imageEntity->method('getUploadPath')
             ->willReturn('user_images');
 
-
-
         $emMock  = $this->getMock('\DafT\ImageGalleryBundle\Entity\Image',
             array('getRepository', 'getClassMetadata', 'persist', 'flush'), array(), '', false);
-        $emMock->expects($this->any())
-            ->method('getRepository')
+
+
             ->will($this->returnValue(new FakeRepository()));
         $emMock->expects($this->any())
             ->method('getClassMetadata')
